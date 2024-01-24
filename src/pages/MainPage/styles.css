@@ -1,0 +1,77 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  gap: 12px;
+}
+
+.main-page > * {
+  width: 60%;
+}
+
+img {
+  width: 100px;
+}
+
+.main-page > .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page > .header .logo {
+  width: 60%;
+  height: auto;
+}
+
+.main-page .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-page .actions .ipt::placeholder {
+  color: #00000088;
+}
+
+.main-page .actions .ipt:focus {
+  border-width: 2px;
+}
+
+.main-page .actions .input-tag {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-page .actions .input-tag .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.main-page .actions .input-tag .tags .tag {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 20px;
+  font-size: 10pt;
+  gap: 4px;
+}
+
+.main-page .actions .input-tag .tags .tag .close {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.main-page .recipes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 8px;
+}
