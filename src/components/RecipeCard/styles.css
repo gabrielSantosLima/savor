@@ -1,0 +1,102 @@
+.recipe {
+  width: 280px;
+  border-radius: 4px;
+  background-color: #e4e4e4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 1px 1px 0px #00000022;
+}
+
+.recipe.expanded {
+  width: 100%;
+}
+
+.recipe .short,
+.recipe.expanded .expand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recipe.expanded .short,
+.recipe .expand {
+  display: none;
+}
+
+.recipe .header {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+.recipe .header .logo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe .info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.recipe .short p {
+  position: relative;
+}
+
+.recipe .short p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.recipe .info p,
+.recipe .info label {
+  word-break: break-word;
+}
+
+.recipe .info label.title {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.recipe .info .ingredients {
+  list-style: inside;
+}
+
+.recipe .see-details {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.recipe .see-details:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.recipe .see-details svg {
+  margin: 0 auto;
+}
+
+.recipe.expanded .see-details svg {
+  animation: expand-icon 0.2s both linear;
+}
+
+@keyframes expand-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

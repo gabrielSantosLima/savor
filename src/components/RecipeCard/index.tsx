@@ -1,14 +1,8 @@
 import { useState } from "react";
-import {
-  AiOutlineDislike as DislikeIcon,
-  AiOutlineLike as LikeIcon,
-} from "react-icons/ai";
 import { MdExpandMore as ArrowIcon } from "react-icons/md";
 import { Recipe } from "../../entities/recipes";
 
 import "./styles.css";
-
-import LogoImg from "../../assets/badget.svg";
 
 interface Props {
   recipe: Recipe;
@@ -18,7 +12,7 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
   const [expanded, setExpanded] = useState(false);
 
   // Short Form
-  const instructionsShortForm = recipe.instructions.substring(0, 64) + "...";
+  const instructionsShortForm = recipe.instructions.substring(0, 44) + "... ";
 
   function handleToggleExpand() {
     setExpanded(!expanded);
@@ -36,42 +30,42 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
     <li className={`recipe ${expanded ? "expanded" : ""}`}>
       <div className="short">
         <header className="header">
-          <img src={LogoImg} alt="Savor Logo" className="logo" />
-          <h2 className="title">Teste</h2>
+          <img src={recipe.pictureLink} alt="Savor Logo" className="logo" />
         </header>
         <div className="info">
-          <label className="title">Instruções</label>
+          <h2 className="title">Teste</h2>
+          <label className="title">Passo a Passo</label>
           <p className="instructions">{instructionsShortForm}</p>
         </div>
       </div>
 
       <div className="expand">
         <header className="header">
-          <img src={LogoImg} alt="Savor Logo" className="logo" />
-          <h2 className="title">Teste</h2>
+          <img src={recipe.pictureLink} alt="Savor Logo" className="logo" />
         </header>
         <div className="info">
+          <h2 className="title">Teste</h2>
           <label className="title">Ingredientes</label>
           <ul className="ingredients">
             {recipe.ingredients.map(renderIngredient)}
           </ul>
 
-          <label className="title">Instruções</label>
+          <label className="title">Passo a Passo</label>
           <p className="instructions">{recipe.instructions}</p>
         </div>
       </div>
 
-      <div className="rating">
+      {/* <div className="rating">
         <button className="like">
           <LikeIcon size={24} />
         </button>
         <button className="dislike">
           <DislikeIcon size={24} />
         </button>
-      </div>
+      </div> */}
 
       <a className="see-details" onClick={handleToggleExpand}>
-        <ArrowIcon size={24} />
+        <ArrowIcon className="icon" size={28} />
       </a>
     </li>
   );
