@@ -69,6 +69,12 @@ img {
   align-items: center;
 }
 
+.main-page .main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .main-page .recipes {
   display: flex;
   flex-wrap: wrap;

@@ -1,4 +1,4 @@
-import { KeyboardEvent, useRef, useState } from "react";
+import { KeyboardEvent, useEffect, useRef, useState } from "react";
 import { MdClose as CloseIcon } from "react-icons/md";
 import RecipeCard from "../../components/RecipeCard";
 import { Recipe } from "../../entities/recipes";
@@ -7,6 +7,9 @@ import { Tag } from "../../entities/tags";
 import "./styles.css";
 
 import LogoImg from "../../assets/badget.svg";
+import { RecipeService, Recommendation } from "../../services/recipes_service";
+
+const recipeService = new RecipeService();
 
 export const MainPage: React.FC = () => {
   // Filters
@@ -15,6 +18,22 @@ export const MainPage: React.FC = () => {
 
   // Found recipes
   const [recipes, setRecipes] = useState<Recipe[] | undefined>();
+  const [recipes2Show, setRecipes2Show] = useState<Recipe[] | undefined>();
+
+  // Metrics
+  const [precision, setPrecision] = useState(0);
+  const [revocation, setRevocation] = useState(0);
+  const [fScore, setFScore] = useState(0);
+
+  useEffect(() => {
+    async function fetch() {
+      const newRecipes = await recipeService.fetch();
+      setRecipes(newRecipes);
+      setRecipes2Show(newRecipes);
+    }
+
+    fetch();
+  }, []);
 
   function renderRecipe(recipe: Recipe, index: number) {
     return <RecipeCard key={`recipe-${index}`} recipe={recipe} />;
@@ -44,6 +63,27 @@ export const MainPage: React.FC = () => {
     }
   }
 
+  function handleRecommendation(event: KeyboardEvent<HTMLInputElement>) {
+    const { key, currentTarget } = event;
+    if (key === "Enter") {
+      const value = currentTarget["value"];
+
+      if (recipes) {
+        recipeService
+          .recommend(value, tags, recipes)
+          .then((result: Recommendation) => {
+            setRecipes2Show(result.recipes);
+            setPrecision(result.precision);
+            setRevocation(result.revocation);
+            setFScore(
+              recipeService.calculateFScore(result.precision, result.revocation)
+            );
+          });
+        setRecipes2Show(undefined);
+      }
+    }
+  }
+
   return (
     <div className="main-page">
       <header className="header">
@@ -55,6 +95,7 @@ export const MainPage: React.FC = () => {
           type="text"
           className="ipt"
           placeholder="Pesquise por receitas..."
+          onKeyDown={handleRecommendation}
           autoFocus
         />
         <div className="input-tag">
@@ -71,8 +112,19 @@ export const MainPage: React.FC = () => {
       </div>
 
       <main className="main">
-        {recipes && recipes.length > 0 ? (
-          <ul className="recipes">{recipes.map(renderRecipe)}</ul>
+        {recipes2Show &&
+          recipes2Show.length > 0 &&
+          precision > 0 &&
+          revocation > 0 && (
+            <label className="metrics">
+              Métricas obtidas: Precisão de {precision * 100}% | Revocação de{" "}
+              {revocation * 100}% | F-Score de {fScore * 100}%
+            </label>
+          )}
+        {recipes2Show && recipes2Show.length > 0 ? (
+          <ul className="recipes">{recipes2Show.map(renderRecipe)}</ul>
+        ) : recipes2Show === undefined ? (
+          <label>Buscando receitas...</label>
         ) : (
           <label>Nenhuma receita para listar.</label>
         )}

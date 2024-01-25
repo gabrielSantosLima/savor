@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { MdExpandMore as ArrowIcon } from "react-icons/md";
 import { Recipe } from "../../entities/recipes";
 
 import "./styles.css";
+
+import DefaultImg from "../../assets/default.svg";
 
 interface Props {
   recipe: Recipe;
@@ -12,7 +14,9 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
   const [expanded, setExpanded] = useState(false);
 
   // Short Form
-  const instructionsShortForm = recipe.instructions.substring(0, 44) + "... ";
+  const instructionsShortForm = recipe.instructions
+    ? recipe.instructions.substring(0, 44) + "... "
+    : "Sem instruções";
 
   function handleToggleExpand() {
     setExpanded(!expanded);
@@ -26,11 +30,29 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
     );
   }
 
+  function handleImageError(
+    event: SyntheticEvent<HTMLImageElement>,
+    imagePath: string,
+    cb?: (event: SyntheticEvent<HTMLImageElement>) => void
+  ) {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = imagePath;
+    console.clear();
+    if (cb) {
+      cb(event);
+    }
+  }
+
   return (
     <li className={`recipe ${expanded ? "expanded" : ""}`}>
       <div className="short">
         <header className="header">
-          <img src={recipe.pictureLink} alt="Savor Logo" className="logo" />
+          <img
+            onError={(event) => handleImageError(event, DefaultImg)}
+            src={recipe.picture_link || DefaultImg}
+            alt="Savor Logo"
+            className="logo"
+          />
         </header>
         <div className="info">
           <h2 className="title">Teste</h2>
@@ -41,13 +63,22 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
 
       <div className="expand">
         <header className="header">
-          <img src={recipe.pictureLink} alt="Savor Logo" className="logo" />
+          <img
+            onError={(event) => handleImageError(event, DefaultImg)}
+            src={recipe.picture_link}
+            alt="Savor Logo"
+            className="logo"
+          />
         </header>
         <div className="info">
           <h2 className="title">Teste</h2>
           <label className="title">Ingredientes</label>
           <ul className="ingredients">
-            {recipe.ingredients.map(renderIngredient)}
+            {recipe.ingredients ? (
+              recipe.ingredients.map(renderIngredient)
+            ) : (
+              <li>Sem ingredientes</li>
+            )}
           </ul>
 
           <label className="title">Passo a Passo</label>
