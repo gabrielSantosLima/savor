@@ -70,6 +70,21 @@
   list-style: inside;
 }
 
+.recipe .score {
+  background-color: var(--primary-color);
+  width: 10rem;
+  text-align: center;
+  color: rgb(69, 26, 26);
+  margin-top: 12pt;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.recipe .score .score-number {
+  margin-top: 6px;
+  font-weight: bolder;
+}
+
 .recipe .see-details {
   margin-top: auto;
   display: flex;

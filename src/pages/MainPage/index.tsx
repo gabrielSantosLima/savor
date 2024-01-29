@@ -18,25 +18,22 @@ export const MainPage: React.FC = () => {
 
   // Found recipes
   const [recipes, setRecipes] = useState<Recipe[] | undefined>();
-  const [recipes2Show, setRecipes2Show] = useState<Recipe[] | undefined>();
-
-  // Metrics
-  const [precision, setPrecision] = useState(0);
-  const [revocation, setRevocation] = useState(0);
-  const [fScore, setFScore] = useState(0);
+  const [recommendations, setRecommendations] = useState<Recommendation[] | undefined>();
+  const [recipes2Show, setRecipes2Show] = useState<Recommendation[] | undefined | Recipe[]>();
 
   useEffect(() => {
     async function fetch() {
-      const newRecipes = await recipeService.fetch();
+      const newRecipes = recipeService.fetchAll();
       setRecipes(newRecipes);
       setRecipes2Show(newRecipes);
+      setRecommendations([]);
     }
 
     fetch();
   }, []);
 
-  function renderRecipe(recipe: Recipe, index: number) {
-    return <RecipeCard key={`recipe-${index}`} recipe={recipe} />;
+  function renderRecipe(recipe: Recommendation, index: number) {
+    return <RecipeCard key={`recipe-${index}`} recommendation={recipe} />;
   }
 
   function handleRemoveTag(tag: Tag) {
@@ -69,17 +66,19 @@ export const MainPage: React.FC = () => {
       const value = currentTarget["value"];
 
       if (recipes) {
-        recipeService
-          .recommend(value, tags, recipes)
-          .then((result: Recommendation) => {
-            setRecipes2Show(result.recipes);
-            setPrecision(result.precision);
-            setRevocation(result.revocation);
-            setFScore(
-              recipeService.calculateFScore(result.precision, result.revocation)
-            );
-          });
-        setRecipes2Show(undefined);
+        const result = recipeService.searchRecipes(value, tags)
+        setRecommendations(result);
+        // recipeService
+        //   .recommend(value, tags, recipes)
+        //   .then((result: Recommendation) => {
+        //     setRecipes2Show(result.recipes);
+        //     setPrecision(result.precision);
+        //     setRevocation(result.revocation);
+        //     setFScore(
+        //       recipeService.calculateFScore(result.precision, result.revocation)
+        //     );
+        //   });
+        // setRecipes2Show(undefined);
       }
     }
   }
@@ -112,17 +111,8 @@ export const MainPage: React.FC = () => {
       </div>
 
       <main className="main">
-        {recipes2Show &&
-          recipes2Show.length > 0 &&
-          precision > 0 &&
-          revocation > 0 && (
-            <label className="metrics">
-              Métricas obtidas: Precisão de {precision * 100}% | Revocação de{" "}
-              {revocation * 100}% | F-Score de {fScore * 100}%
-            </label>
-          )}
         {recipes2Show && recipes2Show.length > 0 ? (
-          <ul className="recipes">{recipes2Show.map(renderRecipe)}</ul>
+          <ul className="recipes">{recommendations?.map(renderRecipe)}</ul>
         ) : recipes2Show === undefined ? (
           <label>Buscando receitas...</label>
         ) : (
