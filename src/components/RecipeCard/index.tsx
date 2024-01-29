@@ -1,22 +1,26 @@
 import { SyntheticEvent, useState } from "react";
 import { MdExpandMore as ArrowIcon } from "react-icons/md";
-import { Recipe } from "../../entities/recipes";
 
 import "./styles.css";
 
 import DefaultImg from "../../assets/default.svg";
+import { Recommendation } from "../../services/recipes_service";
 
 interface Props {
-  recipe: Recipe;
+  recommendation: Recommendation;
 }
 
-const RecipeCard: React.FC<Props> = ({ recipe }) => {
+const RecipeCard: React.FC<Props> = ({ recommendation }) => {
   const [expanded, setExpanded] = useState(false);
 
   // Short Form
-  const instructionsShortForm = recipe.instructions
-    ? recipe.instructions.substring(0, 44) + "... "
+  const instructionsShortForm = recommendation.recipe.instructions.join('\n')
+    ? recommendation.recipe.instructions.join(' ').substring(0, 44) + "... "
     : "Sem instruções";
+  
+  const titleShortForm = recommendation.recipe.title
+    ? recommendation.recipe.title.substring(0, 44) + "... "
+    : "Sem nome";
 
   function handleToggleExpand() {
     setExpanded(!expanded);
@@ -49,13 +53,13 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
         <header className="header">
           <img
             onError={(event) => handleImageError(event, DefaultImg)}
-            src={recipe.picture_link || DefaultImg}
+            src={DefaultImg}
             alt="Savor Logo"
             className="logo"
           />
         </header>
         <div className="info">
-          <h2 className="title">Teste</h2>
+          <h2 className="title">{titleShortForm}</h2>
           <label className="title">Passo a Passo</label>
           <p className="instructions">{instructionsShortForm}</p>
         </div>
@@ -65,27 +69,31 @@ const RecipeCard: React.FC<Props> = ({ recipe }) => {
         <header className="header">
           <img
             onError={(event) => handleImageError(event, DefaultImg)}
-            src={recipe.picture_link}
+            src={DefaultImg}
             alt="Savor Logo"
             className="logo"
           />
         </header>
         <div className="info">
-          <h2 className="title">Teste</h2>
+          <h2 className="title">{recommendation.recipe.title}</h2>
           <label className="title">Ingredientes</label>
           <ul className="ingredients">
-            {recipe.ingredients ? (
-              recipe.ingredients.map(renderIngredient)
+            {recommendation.recipe.ingredients ? (
+              recommendation.recipe.ingredients.map(renderIngredient)
             ) : (
               <li>Sem ingredientes</li>
             )}
           </ul>
 
           <label className="title">Passo a Passo</label>
-          <p className="instructions">{recipe.instructions}</p>
+          <p className="instructions">{recommendation.recipe.instructions}</p>
+          <div className="score">
+            <label className="title">Score de busca</label>
+            <p className="score-number">{recommendation.score.toFixed(2)}</p>
+          </div>
         </div>
       </div>
-
+      
       {/* <div className="rating">
         <button className="like">
           <LikeIcon size={24} />
