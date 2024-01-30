@@ -15,6 +15,7 @@ export const MainPage: React.FC = () => {
   // Filters
   const [tags, setTags] = useState<Tag[]>([]);
   const tagIptRef = useRef<HTMLInputElement>(null);
+  const queryIptRef = useRef<HTMLInputElement>(null);
 
   // Found recipes
   const [recipes, setRecipes] = useState<Recipe[] | undefined>();
@@ -24,13 +25,17 @@ export const MainPage: React.FC = () => {
 
   useEffect(() => {
     async function fetch() {
-      const newRecipes = recipeService.fetchAll();
+      const newRecipes = await recipeService.fetchAll();
       setRecipes(newRecipes);
       setRecipes2Show(newRecipes);
     }
 
     fetch();
   }, []);
+
+  useEffect(() => {
+    fetchRecommendations(queryIptRef.current?.value || "");
+  }, [tags]);
 
   function renderRecipe(recipe: Recommendation | Recipe, index: number) {
     return <RecipeCard key={`recipe-${index}`} recommendation={recipe} />;
@@ -64,22 +69,15 @@ export const MainPage: React.FC = () => {
     const { key, currentTarget } = event;
     if (key === "Enter") {
       const value = currentTarget["value"];
+      fetchRecommendations(value);
+    }
+  }
 
-      if (recipes) {
-        const result = recipeService.searchRecipes(value, tags);
-        setRecipes2Show(result);
-        // recipeService
-        //   .recommend(value, tags, recipes)
-        //   .then((result: Recommendation) => {
-        //     setRecipes2Show(result.recipes);
-        //     setPrecision(result.precision);
-        //     setRevocation(result.revocation);
-        //     setFScore(
-        //       recipeService.calculateFScore(result.precision, result.revocation)
-        //     );
-        //   });
-        // setRecipes2Show(undefined);
-      }
+  function fetchRecommendations(query: string) {
+    if (query === "" && tags.length === 0) return;
+    if (recipes) {
+      const result = recipeService.searchRecipes(query, tags);
+      setRecipes2Show(result);
     }
   }
 
@@ -95,7 +93,8 @@ export const MainPage: React.FC = () => {
           className="ipt"
           placeholder="Pesquise por receitas..."
           onKeyDown={handleRecommendation}
-          autoFocus
+          onBlur={() => fetchRecommendations(queryIptRef.current?.value || "")}
+          ref={queryIptRef}
         />
         <div className="input-tag">
           <input
