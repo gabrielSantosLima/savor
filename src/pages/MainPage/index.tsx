@@ -76,7 +76,7 @@ export const MainPage: React.FC = () => {
   function fetchRecommendations(query: string) {
     if (query === "" && tags.length === 0) return;
     if (recipes) {
-      const result = recipeService.searchRecipes(query, tags);
+      const result = recipeService.searchRecipes(query, tags, recipes);
       setRecipes2Show(result);
     }
   }

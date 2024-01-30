@@ -70,7 +70,11 @@ export class RecipeService {
     return score;
   }
 
-  searchRecipes(query: string, tags: string[]): Recommendation[] {
+  searchRecipes(
+    query: string,
+    tags: string[],
+    recipes: Recipe[]
+  ): Recommendation[] {
     const scores: { recipe: Recipe; score: number }[] = [];
     const quantityOfRecipes = recipes.length;
     for (const recipe of recipes) {
