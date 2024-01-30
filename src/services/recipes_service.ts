@@ -1,4 +1,3 @@
-import recipes from "../../public/data/receitas.json";
 import { Recipe } from "../entities/recipes";
 
 export interface Recommendation {
