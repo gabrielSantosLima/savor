@@ -18,21 +18,21 @@ export const MainPage: React.FC = () => {
 
   // Found recipes
   const [recipes, setRecipes] = useState<Recipe[] | undefined>();
-  const [recommendations, setRecommendations] = useState<Recommendation[] | undefined>();
-  const [recipes2Show, setRecipes2Show] = useState<Recommendation[] | undefined | Recipe[]>();
+  const [recipes2Show, setRecipes2Show] = useState<
+    Recommendation[] | undefined | Recipe[]
+  >();
 
   useEffect(() => {
     async function fetch() {
       const newRecipes = recipeService.fetchAll();
       setRecipes(newRecipes);
       setRecipes2Show(newRecipes);
-      setRecommendations([]);
     }
 
     fetch();
   }, []);
 
-  function renderRecipe(recipe: Recommendation, index: number) {
+  function renderRecipe(recipe: Recommendation | Recipe, index: number) {
     return <RecipeCard key={`recipe-${index}`} recommendation={recipe} />;
   }
 
@@ -66,8 +66,8 @@ export const MainPage: React.FC = () => {
       const value = currentTarget["value"];
 
       if (recipes) {
-        const result = recipeService.searchRecipes(value, tags)
-        setRecommendations(result);
+        const result = recipeService.searchRecipes(value, tags);
+        setRecipes2Show(result);
         // recipeService
         //   .recommend(value, tags, recipes)
         //   .then((result: Recommendation) => {
@@ -112,7 +112,7 @@ export const MainPage: React.FC = () => {
 
       <main className="main">
         {recipes2Show && recipes2Show.length > 0 ? (
-          <ul className="recipes">{recommendations?.map(renderRecipe)}</ul>
+          <ul className="recipes">{recipes2Show.map(renderRecipe)}</ul>
         ) : recipes2Show === undefined ? (
           <label>Buscando receitas...</label>
         ) : (
