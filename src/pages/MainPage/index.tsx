@@ -22,8 +22,9 @@ export const MainPage: React.FC = () => {
   const [recipes2Show, setRecipes2Show] = useState<Recommendation[] | undefined | Recipe[]>();
 
   useEffect(() => {
-    async function fetch() {
+    function fetch() {
       const newRecipes = recipeService.fetchAll();
+      
       setRecipes(newRecipes);
       setRecipes2Show(newRecipes);
       setRecommendations([]);
@@ -66,19 +67,8 @@ export const MainPage: React.FC = () => {
       const value = currentTarget["value"];
 
       if (recipes) {
-        const result = recipeService.searchRecipes(value, tags)
+        const result = recipeService.searchRecipes(value, tags);
         setRecommendations(result);
-        // recipeService
-        //   .recommend(value, tags, recipes)
-        //   .then((result: Recommendation) => {
-        //     setRecipes2Show(result.recipes);
-        //     setPrecision(result.precision);
-        //     setRevocation(result.revocation);
-        //     setFScore(
-        //       recipeService.calculateFScore(result.precision, result.revocation)
-        //     );
-        //   });
-        // setRecipes2Show(undefined);
       }
     }
   }

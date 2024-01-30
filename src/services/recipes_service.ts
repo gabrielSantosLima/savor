@@ -1,14 +1,13 @@
-import recipes from '../../public/data/receitas.json';
+import recipes from '../data/receitas.json';
 import { Recipe } from "../entities/recipes";
-
 export interface Recommendation {
   recipe: Recipe;
   score: number;
 }
 export class RecipeService {
 
-    fetchAll(): Recipe[]{
-      return recipes as Recipe[]
+    fetchAll():Recipe[]{
+      return recipes as Recipe[];
     }
 
     bm25(query: string, tags: string[], document: Recipe, quantityOfRecipes: number): number {
@@ -50,17 +49,36 @@ export class RecipeService {
         return score;
       }
     
-    searchRecipes(query: string, tags: string[]): Recommendation[] {
+      searchRecipes(query: string, tags: string[]): Recommendation[] {
         const scores: { recipe: Recipe; score: number }[] = [];
-        const quantityOfRecipes = recipes.length
+        const quantityOfRecipes = recipes.length;
+    
+        const isSingleTermQuery = query.trim().split(/\s+/).length === 1;
+    
         for (const recipe of recipes) {
-          const score = this.bm25(query, tags, recipe, quantityOfRecipes);
-          scores.push({ recipe, score });
+            let score;
+    
+            if (isSingleTermQuery) {
+                const term = query.toLowerCase();
+                const title = recipe.title.toLowerCase();
+                const instructions = recipe.instructions.join(' ').toLowerCase();
+                const ingredients = recipe.ingredients.join(' ').toLowerCase();
+    
+                if (title.includes(term) || instructions.includes(term) || ingredients.includes(term)) {
+                    score = 1.5;
+                } else {
+                    score = 0;
+                }
+            } else {
+                score = this.bm25(query, tags, recipe, quantityOfRecipes);
+            }
+    
+            scores.push({ recipe, score });
         }
-      
+    
         scores.sort((a, b) => b.score - a.score);
-      
-        return scores.filter(item => item.score >= 1);
+    
+        return scores.filter(item => item.score >= 1.5);
     }
-
+    
 }

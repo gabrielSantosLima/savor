@@ -8,7 +8,8 @@
         "1/2 xícara de granola",
         "1 colher de sopa de mel"
       ],
-      "instructions": "Bata a polpa de açaí no liquidificador com a banana. Despeje em uma tigela, adicione a granola e regue com mel."
+      "instructions": ["Bata a polpa de açaí no liquidificador com a banana.", "Despeje em uma tigela", "adicione a granola e regue com mel."],
+      "picture_link": ""
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
         "1/2 xícara de leite de coco",
         "Azeite de dendê a gosto"
       ],
-      "instructions": "Tempere o tambaqui com sal e limão. Em uma panela, refogue a cebola, alho e pimentão. Adicione o tambaqui, tomate, leite de coco e coentro. Cozinhe até o peixe ficar macio. Adicione azeite de dendê antes de servir."
+      "instructions": ["Tempere o tambaqui com sal e limão.", "Em uma panela, refogue a cebola, alho e pimentão.", "Adicione o tambaqui, tomate, leite de coco e coentro.", "Cozinhe até o peixe ficar macio.", "Adicione azeite de dendê antes de servir."],
+      "picture_link": "https://www.tareekaa.com/wp-content/uploads/2016/08/moqueca-de-peixe-24460_l.jpeg"
     },
     {
         "id": 3,
@@ -35,7 +37,8 @@
         "Jambu a gosto",
         "Pimenta-de-cheiro a gosto"
       ],
-      "instructions": "Ferva o caldo de tucupi. Hidrate a goma de tapioca com água. Em uma cuia, coloque a goma, despeje o tucupi quente, acrescente os camarões, o jambu e a pimenta-de-cheiro."
+      "instructions": ["Ferva o caldo de tucupi.", "Hidrate a goma de tapioca com água.", "Em uma cuia, coloque a goma, despeje o tucupi quente, acrescente os camarões, o jambu e a pimenta-de-cheiro."],
+      "picture_link": "https://acozinhabrasileira.com.br/wp-content/uploads/2021/09/receita-de-tacaca.jpg"
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
         "Coentro a gosto",
         "Pimenta a gosto"
       ],
-      "instructions": "Cozinhe o pirarucu desfiado. Em uma panela, refogue a cebola, adicione o tomate, o pirarucu, as bananas-da-terra e a farinha de tapioca. Cozinhe até ficar homogêneo. Adicione coentro e pimenta a gosto."
+      "instructions": ["Cozinhe o pirarucu desfiado.",  "Em uma panela, refogue a cebola, adicione o tomate, o pirarucu, as bananas-da-terra e a farinha de tapioca.",  "Cozinhe até ficar homogêneo. Adicione coentro e pimenta a gosto."],
+      "picture_link": ""
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
         "3 ovos",
         "1 colher de sopa de fermento em pó"
       ],
-      "instructions": "Bata o açúcar, ovos e óleo. Adicione a polpa de cupuaçu e misture. Acrescente a farinha de trigo e o fermento. Asse em forno preaquecido a 180°C por 30 minutos."
+      "instructions": ["Bata o açúcar, ovos e óleo. Adicione a polpa de cupuaçu e misture. Acrescente a farinha de trigo e o fermento. Asse em forno preaquecido a 180°C por 30 minutos."],
+      "picture_link": ""
     },
     {
         "id": 6,
@@ -73,7 +78,8 @@
             "15g de manteiga sem sal",
             "30g de tucupi preto"
           ],
-          "instructions": "Misture todos os ingredientes em fogo médio e mexa sem parar por dez minutos. Quando a mistura estiver desgrudando do fundo da panela, retire e deixe amornar. Faça as bolinhas com as mãos e cubra com raspas de chocolate amargo."
+          "instructions": ["Misture todos os ingredientes em fogo médio e mexa sem parar por dez minutos. Quando a mistura estiver desgrudando do fundo da panela, retire e deixe amornar. Faça as bolinhas com as mãos e cubra com raspas de chocolate amargo."],
+          "picture_link": ""
         },
         {
             "id": 7,
@@ -86,7 +92,8 @@
             "2 cumarus (fava tonka) ralados",
             "500g de açúcar (para o caramelo)"
           ],
-          "instructions": "Em uma panela, misture o leite condensado e o creme de leite. Rale o cumaru e aqueça até amornar para fazer uma infusão. Deixe esfriar. Bata bem os ovos e junte à mistura de leites. Para o caramelo, derreta o açúcar em uma panela. Monte o pudim e asse em banho-maria a 160°C por aproximadamente 50 minutos."
+          "instructions": ["Em uma panela, misture o leite condensado e o creme de leite. Rale o cumaru e aqueça até amornar para fazer uma infusão. Deixe esfriar. Bata bem os ovos e junte à mistura de leites. Para o caramelo, derreta o açúcar em uma panela. Monte o pudim e asse em banho-maria a 160°C por aproximadamente 50 minutos."],
+          "picture_link": ""
         },
         {
             "id": 8,
@@ -105,7 +112,8 @@
             "10g de fermento químico",
             "4 litros de caldo de peixe"
           ],
-          "instructions": "Bata o ovo. Aqueça o caldo de peixe. Processe todos os ingredientes juntos, exceto o caldo e a farinha de matzá, até virar uma massa homogênea. Em um bowl, agregue a farinha de matzá à massa de pescados. Faça quenelles (bolinhos) e cozinhe no caldo de peixe por 40 minutos. Finalize com gelatina formada pelo caldo ao esfriar."
+          "instructions": ["Bata o ovo. Aqueça o caldo de peixe. Processe todos os ingredientes juntos, exceto o caldo e a farinha de matzá, até virar uma massa homogênea. Em um bowl, agregue a farinha de matzá à massa de pescados. Faça quenelles (bolinhos) e cozinhe no caldo de peixe por 40 minutos. Finalize com gelatina formada pelo caldo ao esfriar."],
+          "picture_link": ""
         },
         {
             "id": 9,
@@ -120,7 +128,8 @@
             "100g de chicória",
             "50g de coentro"
           ],
-          "instructions": "Em uma panela, cozinhe as batatas. Processe as batatas cozidas para obter um purê liso. Adicione manteiga, farinha de trigo e sal, e cozinhe até a massa ficar firme. Faça pequenas bolas e cozinhe em uma frigideira com azeite e manteiga. Adicione o mix de ervas picadas: jambu, alfavaca, chicória e coentro."
+          "instructions": ["Em uma panela, cozinhe as batatas. Processe as batatas cozidas para obter um purê liso. Adicione manteiga, farinha de trigo e sal, e cozinhe até a massa ficar firme. Faça pequenas bolas e cozinhe em uma frigideira com azeite e manteiga. Adicione o mix de ervas picadas: jambu, alfavaca, chicória e coentro."],
+          "picture_link": ""
         },
         {
             "id": 10,
@@ -142,7 +151,8 @@
             "Pimenta-do-reino a gosto",
             "Cominho a gosto"
           ],
-          "instructions": "Ferva a maniva em água por 12 horas diárias durante três dias. Acrescente toucinho branco e defumado no terceiro dia. Deixe ferver por mais 12 horas. Coloque as carnes salgadas e o charque de molho para tirar o excesso de sal. Junte todos os ingredientes e cozinhe por mais dois dias, mexendo de vez em quando."
+          "instructions": ["Ferva a maniva em água por 12 horas diárias durante três dias. Acrescente toucinho branco e defumado no terceiro dia. Deixe ferver por mais 12 horas. Coloque as carnes salgadas e o charque de molho para tirar o excesso de sal. Junte todos os ingredientes e cozinhe por mais dois dias, mexendo de vez em quando."],
+          "picture_link": ""
         },
         {
             "id": 11,
@@ -161,7 +171,8 @@
             "Óleo para fritar",
             "Mix de ervas (jambu, alfavaca, chicória, coentro)"
           ],
-          "instructions": "Bata ovos, goma de tapioca e sal. Faça uma massa homogênea. Em uma frigideira, faça discos de massa e recheie com queijo do marajó. Para o molho, ferva tucupi, chicória, alho. Adicione amido de milho dissolvido, açúcar. Frite os discos e sirva com o molho e mix de ervas."
+          "instructions": ["Bata ovos, goma de tapioca e sal. Faça uma massa homogênea. Em uma frigideira, faça discos de massa e recheie com queijo do marajó. Para o molho, ferva tucupi, chicória, alho. Adicione amido de milho dissolvido, açúcar. Frite os discos e sirva com o molho e mix de ervas."],
+          "picture_link": ""
         },
         {
             "id": 12,
@@ -178,7 +189,8 @@
             "1 lata de leite condensado",
             "Castanhas-do-pará tostadas"
           ],
-          "instructions": "Bata açúcar, manteiga e ovos. Adicione trigo, leite e fermento. Bata claras em neve e adicione à massa. Asse. Cozinhe cupuaçu e açúcar até desprender da panela. Cozinhe leite condensado. Monte a torta e cubra com doce de cupuaçu, doce de leite e castanhas-do-pará."
+          "instructions": ["Bata açúcar, manteiga e ovos. Adicione trigo, leite e fermento. Bata claras em neve e adicione à massa. Asse. Cozinhe cupuaçu e açúcar até desprender da panela. Cozinhe leite condensado. Monte a torta e cubra com doce de cupuaçu, doce de leite e castanhas-do-pará."],
+          "picture_link": ""
         },
         {
             "id": 13,
@@ -193,7 +205,8 @@
             "Óleo para fritar",
             "2 bolas de açaí"
           ],
-          "instructions": "Frite rodelas de banana-da-terra até dourar. Amasse em discos e frite novamente. Queime banana-nanica com açúcar. Passe pasta de amendoim nos discos, adicione queimadinho de banana, amendoim triturado e paçoca. Sirva com açaí."
+          "instructions": ["Frite rodelas de banana-da-terra até dourar. Amasse em discos e frite novamente. Queime banana-nanica com açúcar. Passe pasta de amendoim nos discos, adicione queimadinho de banana, amendoim triturado e paçoca. Sirva com açaí."],
+          "picture_link": ""
         },
         {
             "id": 14,
@@ -203,7 +216,8 @@
             "25ml de xarope de banana",
             "200ml de açaí cremoso"
           ],
-          "instructions": "Coloque os ingredientes no liquidificador e bata até obter uma mistura homogênea. Sirva com um canudo grosso."
+          "instructions": ["Coloque os ingredientes no liquidificador e bata até obter uma mistura homogênea. Sirva com um canudo grosso."],
+          "picture_link": ""
         },
         {
             "id": 15,
@@ -223,7 +237,8 @@
               "Em outro recipiente, misture a goma de tapioca com o restante da água e misture.",
               "Acrescente a mistura na panela que está no fogo para proporcionar uma cremosidade única ao prato.",
               "Mexa a mujeca por mais alguns minutos e sirva. Se desejar, pode fazer um beiju como acompanhamento."
-            ]
+            ],
+            "picture_link": ""
           },
           {
                 "id": 16,
@@ -250,7 +265,8 @@
                   "Junte os pedaços de pato e deixe ferver até ficarem bem macios.",
                   "Acrescente o jambu e espere voltar a ferver.",
                   "Ajuste o sal e sirva com arroz, farinha-d'água (uma farinha de mandioca mais granulosa) e, se desejar, com molho de pimenta (soque algumas pimentas-de-cheiro com sal e regue com um pouco do tucupi quente)."
-                ]         
+                ],
+                "picture_link": ""       
           },
           {
             "id": 17,
@@ -266,7 +282,8 @@
                 "Passar manteiga no pão francês e chapear.",
                 "Acrescentar dentro do pão a banana pacovã frita, o tucumã e a fatia de queijo coalho.",
                 "Esperar o queijo derreter."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 18,
@@ -294,7 +311,8 @@
               "Coloque o peixe e deixe ferver por dez minutos.",
               "Adicione o restante do tomate, da cebola, da pimenta-de-cheiro, do cheiro verde e da chicória. Ajuste o sal a gosto.",
               "O prato precisa ser degustado com beiju de mandioca."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 19,
@@ -310,7 +328,8 @@
               "Em uma panela, adicione dois litros de água e, quando ferver, adicione as pimentas e quatro colheres do tucupi preto.",
               "Aos poucos, coloque os pedaços de peixe e deixe cozinhar por 10 minutos.",
               "Nesse meio tempo, você pode preparar tapiocas para serem servidas como acompanhamento para a quinhapira."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 20,
@@ -335,7 +354,8 @@
               "Após isso, coloque a farinha.",
               "Deixe fervendo por dez minutos para dar consistência.",
               "Passado o tempo, coloque sal à gosto e, depois, adicione cheiro verde. Misture e está pronto!"
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 21,
@@ -363,7 +383,8 @@
               "Ferva por aproximadamente 20 minutos.",
               "Após os 20 minutos, apague o fogo, coloque o resto do coentro e da cebolinha e sirva a seguir.",
               "Essa caldeirada pode ser acompanhada de arroz branco."
-            ]
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.pzzyaJcyC1W3764cM4dOPwHaE8?rs=1&pid=ImgDetMain"
           },
           {
             "id": 22,
@@ -384,7 +405,8 @@
               "Em seguida, frite o peixe no azeite, de todos os lados, em fogo baixo, de 20 a 25 minutos, para deixar o filé ainda suculento e está pronto.",
               "Para o molho, ferva o tucupi por 5 minutos, em fogo baixo, até atingir uma textura mais consistente.",
               "Dica do chefe: Sirva o peixe sobre legumes, como repolho, batata, cenoura, brócolis, palmito; acompanhado de arroz e farofa."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 23,
@@ -400,7 +422,8 @@
               "Retire.",
               "Repita até acabar as bananas e a manteiga.",
               "Sirva quente."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 24,
@@ -417,11 +440,12 @@
               "Ponha no liquidificador todos os ingredientes e bata até ficar a massa meio granulada.",
               "Coloque em forma de anel central untada.",
               "Forno quente até dourar."
-            ]
+            ],
+            "picture_link": ""
           },
           {
             "id": 25,
-            "title": "Costela de Tambaqui na Churrasqueira",
+            "title": "Costela de Tambaqui assado na Churrasqueira",
             "ingredients": [
               "3 kg de costela de tambaqui",
               "2 maços de cheiro-verde",
@@ -438,7 +462,8 @@
               "Em seguida, pegue um pedaço de papel alumínio, unte-o e enrole o peixe para levá-lo à churrasqueira em grelha de duas abas.",
               "Deixe assar por aproximadamente 1h30min, virando uma vez.",
               "Em seguida, retire o papel alumínio e deixe por mais 30 minutos ou até torrar as escamas."
-            ]
+            ],
+            "picture_link": ""
           }          
   ]
   
