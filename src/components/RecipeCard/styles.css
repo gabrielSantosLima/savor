@@ -71,18 +71,29 @@
 }
 
 .recipe .score {
-  background-color: var(--primary-color);
-  width: 10rem;
+  --size-score: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--primary-color);
+  border: 4px dashed var(--primary-color);
+  width: var(--size-score);
+  height: var(--size-score);
   text-align: center;
-  color: rgb(69, 26, 26);
-  margin-top: 12pt;
-  padding: 5px;
-  border-radius: 5px;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  font-weight: 200;
+  font-size: 8pt;
+  margin-top: 10px;
+  align-self: center;
 }
 
 .recipe .score .score-number {
   margin-top: 6px;
-  font-weight: bolder;
+  font-size: 14pt;
+  font-weight: bold;
 }
 
 .recipe .see-details {

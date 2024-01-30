@@ -11,6 +11,18 @@
   width: 60%;
 }
 
+@media (max-width: 600px) {
+  .main-page > * {
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-page > * {
+    width: 100%;
+  }
+}
+
 img {
   width: 100px;
 }
