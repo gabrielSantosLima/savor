@@ -8,7 +8,8 @@
         "1/2 xícara de granola",
         "1 colher de sopa de mel"
       ],
-      "instructions": ["Bata a polpa de açaí no liquidificador com a banana.", "Despeje em uma tigela", "adicione a granola e regue com mel."]
+      "instructions": ["Bata a polpa de açaí no liquidificador com a banana.", "Despeje em uma tigela", "adicione a granola e regue com mel."],
+      "picture_link": "https://th.bing.com/th/id/OIP.QG-U-CoGf5-9VmgfurTKBAHaEj?rs=1&pid=ImgDetMain"
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
         "1/2 xícara de leite de coco",
         "Azeite de dendê a gosto"
       ],
-      "instructions": ["Tempere o tambaqui com sal e limão.", "Em uma panela, refogue a cebola, alho e pimentão.", "Adicione o tambaqui, tomate, leite de coco e coentro.", "Cozinhe até o peixe ficar macio.", "Adicione azeite de dendê antes de servir."]
+      "instructions": ["Tempere o tambaqui com sal e limão.", "Em uma panela, refogue a cebola, alho e pimentão.", "Adicione o tambaqui, tomate, leite de coco e coentro.", "Cozinhe até o peixe ficar macio.", "Adicione azeite de dendê antes de servir."],
+      "picture_link": "https://th.bing.com/th/id/OIP.8uY6tZDWlKGaPecjxMZkfAHaHa?rs=1&pid=ImgDetMain"
     },
     {
         "id": 3,
@@ -35,7 +37,8 @@
         "Jambu a gosto",
         "Pimenta-de-cheiro a gosto"
       ],
-      "instructions": ["Ferva o caldo de tucupi.", "Hidrate a goma de tapioca com água.", "Em uma cuia, coloque a goma, despeje o tucupi quente, acrescente os camarões, o jambu e a pimenta-de-cheiro."]
+      "instructions": ["Ferva o caldo de tucupi.", "Hidrate a goma de tapioca com água.", "Em uma cuia, coloque a goma, despeje o tucupi quente, acrescente os camarões, o jambu e a pimenta-de-cheiro."],
+      "picture_link": "https://th.bing.com/th/id/OIP.uirl3wAxYd0_RMc0IgQ3gQHaE8?rs=1&pid=ImgDetMain"
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
         "Coentro a gosto",
         "Pimenta a gosto"
       ],
-      "instructions": ["Cozinhe o pirarucu desfiado.",  "Em uma panela, refogue a cebola, adicione o tomate, o pirarucu, as bananas-da-terra e a farinha de tapioca.",  "Cozinhe até ficar homogêneo. Adicione coentro e pimenta a gosto."]
+      "instructions": ["Cozinhe o pirarucu desfiado.",  "Em uma panela, refogue a cebola, adicione o tomate, o pirarucu, as bananas-da-terra e a farinha de tapioca.",  "Cozinhe até ficar homogêneo. Adicione coentro e pimenta a gosto."],
+      "picture_link": "https://th.bing.com/th/id/OIP.bGrx8iE3Sy6ejKryaxgxrwHaEc?rs=1&pid=ImgDetMain"
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
         "3 ovos",
         "1 colher de sopa de fermento em pó"
       ],
-      "instructions": ["Bata o açúcar, ovos e óleo. Adicione a polpa de cupuaçu e misture. Acrescente a farinha de trigo e o fermento. Asse em forno preaquecido a 180°C por 30 minutos."]
+      "instructions": ["Bata o açúcar, ovos e óleo. Adicione a polpa de cupuaçu e misture. Acrescente a farinha de trigo e o fermento. Asse em forno preaquecido a 180°C por 30 minutos."],
+      "picture_link": "https://th.bing.com/th/id/OIP.wT3EMTNvXDRAt5A8dk-1AgHaE7?rs=1&pid=ImgDetMain"
     },
     {
         "id": 6,
@@ -73,7 +78,8 @@
             "15g de manteiga sem sal",
             "30g de tucupi preto"
           ],
-          "instructions": ["Misture todos os ingredientes em fogo médio e mexa sem parar por dez minutos. Quando a mistura estiver desgrudando do fundo da panela, retire e deixe amornar. Faça as bolinhas com as mãos e cubra com raspas de chocolate amargo."]
+          "instructions": ["Misture todos os ingredientes em fogo médio e mexa sem parar por dez minutos. Quando a mistura estiver desgrudando do fundo da panela, retire e deixe amornar. Faça as bolinhas com as mãos e cubra com raspas de chocolate amargo."],
+          "picture_link": "https://th.bing.com/th/id/OIP.D1kaHqpMCkOnrGMs-POW0wHaFb?rs=1&pid=ImgDetMain"
         },
         {
             "id": 7,
@@ -86,7 +92,8 @@
             "2 cumarus (fava tonka) ralados",
             "500g de açúcar (para o caramelo)"
           ],
-          "instructions": ["Em uma panela, misture o leite condensado e o creme de leite. Rale o cumaru e aqueça até amornar para fazer uma infusão. Deixe esfriar. Bata bem os ovos e junte à mistura de leites. Para o caramelo, derreta o açúcar em uma panela. Monte o pudim e asse em banho-maria a 160°C por aproximadamente 50 minutos."]
+          "instructions": ["Em uma panela, misture o leite condensado e o creme de leite. Rale o cumaru e aqueça até amornar para fazer uma infusão. Deixe esfriar. Bata bem os ovos e junte à mistura de leites. Para o caramelo, derreta o açúcar em uma panela. Monte o pudim e asse em banho-maria a 160°C por aproximadamente 50 minutos."],
+          "picture_link": "https://th.bing.com/th/id/R.c1351d35f4f891b1e5b18f693b31a3af?rik=ttepIHfa0EczpA&riu=http%3a%2f%2fs2.glbimg.com%2fJOTJQf9BphwvDahnuM_QpALRsy8%3d%2fe.glbimg.com%2fog%2fed%2ff%2foriginal%2f2015%2f02%2f27%2fcc39_docevida_3.jpg&ehk=SK%2bVUjG5%2fZaKMJ5AdM0X0%2bv%2fop2C4kf4%2f3f3NAiJdis%3d&risl=&pid=ImgRaw&r=0"
         },
         {
             "id": 8,
@@ -105,7 +112,8 @@
             "10g de fermento químico",
             "4 litros de caldo de peixe"
           ],
-          "instructions": ["Bata o ovo. Aqueça o caldo de peixe. Processe todos os ingredientes juntos, exceto o caldo e a farinha de matzá, até virar uma massa homogênea. Em um bowl, agregue a farinha de matzá à massa de pescados. Faça quenelles (bolinhos) e cozinhe no caldo de peixe por 40 minutos. Finalize com gelatina formada pelo caldo ao esfriar."]
+          "instructions": ["Bata o ovo. Aqueça o caldo de peixe. Processe todos os ingredientes juntos, exceto o caldo e a farinha de matzá, até virar uma massa homogênea. Em um bowl, agregue a farinha de matzá à massa de pescados. Faça quenelles (bolinhos) e cozinhe no caldo de peixe por 40 minutos. Finalize com gelatina formada pelo caldo ao esfriar."],
+          "picture_link": "https://th.bing.com/th/id/OIP.LN9ezcpwjxln53bg4ZoSBgHaD3?rs=1&pid=ImgDetMain"
         },
         {
             "id": 9,
@@ -120,7 +128,8 @@
             "100g de chicória",
             "50g de coentro"
           ],
-          "instructions": ["Em uma panela, cozinhe as batatas. Processe as batatas cozidas para obter um purê liso. Adicione manteiga, farinha de trigo e sal, e cozinhe até a massa ficar firme. Faça pequenas bolas e cozinhe em uma frigideira com azeite e manteiga. Adicione o mix de ervas picadas: jambu, alfavaca, chicória e coentro."]
+          "instructions": ["Em uma panela, cozinhe as batatas. Processe as batatas cozidas para obter um purê liso. Adicione manteiga, farinha de trigo e sal, e cozinhe até a massa ficar firme. Faça pequenas bolas e cozinhe em uma frigideira com azeite e manteiga. Adicione o mix de ervas picadas: jambu, alfavaca, chicória e coentro."],
+          "picture_link": "https://s2.glbimg.com/-dCXVKO9R5hJ2UZW_2epc2q70fY=/620x480/smart/e.glbimg.com/og/ed/f/original/2020/02/12/receita-de-nhoque-de-jambu.jpg"
         },
         {
             "id": 10,
@@ -142,7 +151,8 @@
             "Pimenta-do-reino a gosto",
             "Cominho a gosto"
           ],
-          "instructions": ["Ferva a maniva em água por 12 horas diárias durante três dias. Acrescente toucinho branco e defumado no terceiro dia. Deixe ferver por mais 12 horas. Coloque as carnes salgadas e o charque de molho para tirar o excesso de sal. Junte todos os ingredientes e cozinhe por mais dois dias, mexendo de vez em quando."]
+          "instructions": ["Ferva a maniva em água por 12 horas diárias durante três dias. Acrescente toucinho branco e defumado no terceiro dia. Deixe ferver por mais 12 horas. Coloque as carnes salgadas e o charque de molho para tirar o excesso de sal. Junte todos os ingredientes e cozinhe por mais dois dias, mexendo de vez em quando."],
+          "picture_link": "https://th.bing.com/th/id/OIP.fUg5x00yim0J0J805WbfdQHaE8?rs=1&pid=ImgDetMain"
         },
         {
             "id": 11,
@@ -161,7 +171,8 @@
             "Óleo para fritar",
             "Mix de ervas (jambu, alfavaca, chicória, coentro)"
           ],
-          "instructions": ["Bata ovos, goma de tapioca e sal. Faça uma massa homogênea. Em uma frigideira, faça discos de massa e recheie com queijo do marajó. Para o molho, ferva tucupi, chicória, alho. Adicione amido de milho dissolvido, açúcar. Frite os discos e sirva com o molho e mix de ervas."]
+          "instructions": ["Bata ovos, goma de tapioca e sal. Faça uma massa homogênea. Em uma frigideira, faça discos de massa e recheie com queijo do marajó. Para o molho, ferva tucupi, chicória, alho. Adicione amido de milho dissolvido, açúcar. Frite os discos e sirva com o molho e mix de ervas."],
+          "picture_link": "https://th.bing.com/th/id/OIP.h1Fe9DFw86lFq07p1ygW9AHaFb?rs=1&pid=ImgDetMain"
         },
         {
             "id": 12,
@@ -178,7 +189,8 @@
             "1 lata de leite condensado",
             "Castanhas-do-pará tostadas"
           ],
-          "instructions": ["Bata açúcar, manteiga e ovos. Adicione trigo, leite e fermento. Bata claras em neve e adicione à massa. Asse. Cozinhe cupuaçu e açúcar até desprender da panela. Cozinhe leite condensado. Monte a torta e cubra com doce de cupuaçu, doce de leite e castanhas-do-pará."]
+          "instructions": ["Bata açúcar, manteiga e ovos. Adicione trigo, leite e fermento. Bata claras em neve e adicione à massa. Asse. Cozinhe cupuaçu e açúcar até desprender da panela. Cozinhe leite condensado. Monte a torta e cubra com doce de cupuaçu, doce de leite e castanhas-do-pará."],
+          "picture_link": "https://th.bing.com/th/id/R.1268b5efd0bb5105ff562facea9f0ec1?rik=WoDcb1pOBRgWeg&pid=ImgRaw&r=0"
         },
         {
             "id": 13,
@@ -193,7 +205,8 @@
             "Óleo para fritar",
             "2 bolas de açaí"
           ],
-          "instructions": ["Frite rodelas de banana-da-terra até dourar. Amasse em discos e frite novamente. Queime banana-nanica com açúcar. Passe pasta de amendoim nos discos, adicione queimadinho de banana, amendoim triturado e paçoca. Sirva com açaí."]
+          "instructions": ["Frite rodelas de banana-da-terra até dourar. Amasse em discos e frite novamente. Queime banana-nanica com açúcar. Passe pasta de amendoim nos discos, adicione queimadinho de banana, amendoim triturado e paçoca. Sirva com açaí."],
+          "picture_link": "https://s2.glbimg.com/PzIVXr4SHC7IV3cozinDcg2LorY=/512x320/smart/e.glbimg.com/og/ed/f/original/2013/06/13/banana-caramelada-com-farof.jpg"
         },
         {
             "id": 14,
@@ -203,7 +216,8 @@
             "25ml de xarope de banana",
             "200ml de açaí cremoso"
           ],
-          "instructions": ["Coloque os ingredientes no liquidificador e bata até obter uma mistura homogênea. Sirva com um canudo grosso."]
+          "instructions": ["Coloque os ingredientes no liquidificador e bata até obter uma mistura homogênea. Sirva com um canudo grosso."],
+          "picture_link": "https://s2.glbimg.com/J8xzPuwlOit1gi19P_9xTYMOWx0=/620x850/e.glbimg.com/og/ed/f/original/2018/10/16/acai-cream.jpg"
         },
         {
             "id": 15,
@@ -223,7 +237,8 @@
               "Em outro recipiente, misture a goma de tapioca com o restante da água e misture.",
               "Acrescente a mistura na panela que está no fogo para proporcionar uma cremosidade única ao prato.",
               "Mexa a mujeca por mais alguns minutos e sirva. Se desejar, pode fazer um beiju como acompanhamento."
-            ]
+            ],
+            "picture_link": "https://pubimg.band.uol.com.br/files/91879147278b800c9781.png"
           },
           {
                 "id": 16,
@@ -250,7 +265,8 @@
                   "Junte os pedaços de pato e deixe ferver até ficarem bem macios.",
                   "Acrescente o jambu e espere voltar a ferver.",
                   "Ajuste o sal e sirva com arroz, farinha-d'água (uma farinha de mandioca mais granulosa) e, se desejar, com molho de pimenta (soque algumas pimentas-de-cheiro com sal e regue com um pouco do tucupi quente)."
-                ]         
+                ],
+                "picture_link": "https://cloudfront-us-east-1.images.arcpublishing.com/estadao/3HQ7FB53YNL7LJ66SVKA6KASYQ.jpg"         
           },
           {
             "id": 17,
@@ -266,7 +282,8 @@
                 "Passar manteiga no pão francês e chapear.",
                 "Acrescentar dentro do pão a banana pacovã frita, o tucumã e a fatia de queijo coalho.",
                 "Esperar o queijo derreter."
-            ]
+            ],
+            "picture_link": "https://blog.rbarcos.com.br/wp-content/uploads/2020/09/X-Caboquinho.jpeg"
           },
           {
             "id": 18,
@@ -294,7 +311,8 @@
               "Coloque o peixe e deixe ferver por dez minutos.",
               "Adicione o restante do tomate, da cebola, da pimenta-de-cheiro, do cheiro verde e da chicória. Ajuste o sal a gosto.",
               "O prato precisa ser degustado com beiju de mandioca."
-            ]
+            ],
+            "picture_link": "https://portalamazonia.com/images/p/35982/damurida.jpg"
           },
           {
             "id": 19,
@@ -310,7 +328,8 @@
               "Em uma panela, adicione dois litros de água e, quando ferver, adicione as pimentas e quatro colheres do tucupi preto.",
               "Aos poucos, coloque os pedaços de peixe e deixe cozinhar por 10 minutos.",
               "Nesse meio tempo, você pode preparar tapiocas para serem servidas como acompanhamento para a quinhapira."
-            ]
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.WnxC95_oQ8jekVko8G--wgHaD3?rs=1&pid=ImgDetMain"
           },
           {
             "id": 20,
@@ -335,7 +354,8 @@
               "Após isso, coloque a farinha.",
               "Deixe fervendo por dez minutos para dar consistência.",
               "Passado o tempo, coloque sal à gosto e, depois, adicione cheiro verde. Misture e está pronto!"
-            ]
+            ],
+            "picture_link": "https://gastronomiadobrasil.com.br/wp-content/uploads/2020/03/gastronomia-do-brasil-regi%C3%A3o-norte-Mujica-de-peixe.png"
           },
           {
             "id": 21,
@@ -363,7 +383,8 @@
               "Ferva por aproximadamente 20 minutos.",
               "Após os 20 minutos, apague o fogo, coloque o resto do coentro e da cebolinha e sirva a seguir.",
               "Essa caldeirada pode ser acompanhada de arroz branco."
-            ]
+            ],
+            "picture_link": "https://static.itdg.com.br/images/1200-675/6be881b0346902cccea01ca956e45404/318467-original.jpg"
           },
           {
             "id": 22,
@@ -384,7 +405,8 @@
               "Em seguida, frite o peixe no azeite, de todos os lados, em fogo baixo, de 20 a 25 minutos, para deixar o filé ainda suculento e está pronto.",
               "Para o molho, ferva o tucupi por 5 minutos, em fogo baixo, até atingir uma textura mais consistente.",
               "Dica do chefe: Sirva o peixe sobre legumes, como repolho, batata, cenoura, brócolis, palmito; acompanhado de arroz e farofa."
-            ]
+            ],
+            "picture_link": "https://s2-g1.glbimg.com/iY3omAsAaF3P5Ubq4Ip8aONiLNc=/0x0:867x488/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/F/H/FIAp4PQriGb4HA4cZImQ/gurijuba.jpg"
           },
           {
             "id": 23,
@@ -400,14 +422,15 @@
               "Retire.",
               "Repita até acabar as bananas e a manteiga.",
               "Sirva quente."
-            ]
+            ],
+            "picture_link": "https://www.segredosdatiaemilia.com.br/wp-content/uploads/2013/07/banana-da-terra-frita-1.jpg"
           },
           {
             "id": 24,
             "title": "Bolo de Macaxeira",
             "ingredients": [
               "1 kg de mandioca crua picada",
-              "3 unidades de ovo",
+              "3 unidades de ovos",
               "1 1/2 xícaras (chá) de leite de coco",
               "2 xícaras (chá) de açúcar",
               "3 colheres (sopa) de manteiga",
@@ -417,7 +440,8 @@
               "Ponha no liquidificador todos os ingredientes e bata até ficar a massa meio granulada.",
               "Coloque em forma de anel central untada.",
               "Forno quente até dourar."
-            ]
+            ],
+            "picture_link": "https://i0.statig.com.br/bancodeimagens/1z/jn/eb/1zjnebp5tsq325sy3tyfr991s.jpg"
           },
           {
             "id": 25,
@@ -438,7 +462,154 @@
               "Em seguida, pegue um pedaço de papel alumínio, unte-o e enrole o peixe para levá-lo à churrasqueira em grelha de duas abas.",
               "Deixe assar por aproximadamente 1h30min, virando uma vez.",
               "Em seguida, retire o papel alumínio e deixe por mais 30 minutos ou até torrar as escamas."
-            ]
-          }          
+            ],
+            "picture_link": "https://www.peixeamazonico.com.br/wp-content/uploads/2021/04/tambaqui.jpg"
+          },
+          {
+            "id": 26,
+            "title": "Farofa de Castanhas-do-Pará e Jambu",
+            "ingredients": [
+              "100 g de bacon picado",
+              "2 colheres (sopa) de manteiga",
+              "1 cebola ralada",
+              "4 folhas de jambu picado",
+              "1 colher (sopa) de MAGGI® Fondor",
+              "meia xícara (chá) de castanha-do-pará picadas",
+              "1 e meia xícara (chá) de farinha de mandioca crua",
+              "1 colher (sopa) de coentro picado"
+            ],
+            "instructions": [
+              "Em uma panela, frite o bacon em sua própria gordura, junte a manteiga, a cebola, o jambu e refogue bem.",
+              "Junte o MAGGI Fondor, a castanha e frite bem.",
+              "Por último, misture a farinha e deixe ficar bem quente, mexendo de vez em quando.",
+              "Sirva a seguir, polvilhado com o coentro."
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.mXNjSdAQtlTgFsAHFuGsLgHaE_?rs=1&pid=ImgDetMain"
+          },
+          {
+            "id": 27,
+            "title": "Dourado ao Molho de Cupuaçu",
+            "ingredients": [
+              "1 quilo de filés de dourado",
+              "1 colher (sopa) de MAGGI® Fondor",
+              "1 xícara (chá) de vinho branco",
+              "2 dentes de alho amassados",
+              "3 colheres (sopa) de manteiga",
+              "2 colheres (sopa) de manteiga",
+              "1 cebola em pétalas",
+              "1 colher (chá) de açúcar",
+              "1 colher (sopa) de farinha de trigo",
+              "1 colher (chá) de sal",
+              "2 pacotes de polpa de cupuaçu congelada (200 g)",
+              "meia xícara (chá) de água",
+              "1 colher (sopa) de coentro picado"
+            ],
+            "instructions": [
+              "Em uma assadeira, tempere o dourado com o MAGGI Fondor, o vinho e o alho.",
+              "Cubra com papel-alumínio e leve à geladeira por cerca de 1 hora, para tomar gosto.",
+              "Abra o papel-alumínio, besunte o peixe com a manteiga e cubra novamente.",
+              "Asse em forno médio (180ºC), preaquecido, por cerca de 30 minutos.",
+              "Retire o papel-alumínio e volte ao forno por cerca de 15 minutos ou até dourar. Reserve.",
+              "Em uma panela, aqueça a manteiga e refogue a cebola.",
+              "Polvilhe o açúcar e deixe caramelizar por cerca de 1 minuto. Acrescente a farinha de trigo e deixe dourar.",
+              "Junte o sal, a polpa de cupuaçu e a água e cozinhe até engrossar.",
+              "Salpique o peixe com o coentro picado. Sirva."
+            ],
+            "picture_link": "https://th.bing.com/th/id/R.f83b0a2a9a4dbf5b5244d625434e18c1?rik=7WYagMXklw4zDQ&pid=ImgRaw&r=0"
+          },
+          {
+            "id": 28,
+            "title": "Bolo de Castanha-do-Pará com Calda de Açaí",
+            "ingredients": [
+              "200 g de polpa de açaí",
+              "suco de meio limão",
+              "4 colheres (sopa) de açúcar",
+              "meia colher (chá) de fécula de batata",
+              "100 g de manteiga em temperatura ambiente",
+              "1 e meia xícara (chá) de açúcar",
+              "3 ovos",
+              "2 xícaras (chá) de farinha de trigo",
+              "1 xícara (chá) de Leite Líquido NINHO® Forti+ Integral",
+              "1 colher (sopa) de fermento em pó",
+              "1 xícara (chá) de castanhas-do-pará picadas grosseiramente"
+            ],
+            "instructions": [
+              "Em uma panela, junte todos os ingredientes da calda e leve ao fogo baixo, mexendo sempre até ferver. Reserve.",
+              "Em uma batedeira, bata a manteiga e o açúcar até obter um creme esbranquiçado.",
+              "Acrescente os ovos e bata por mais alguns instantes.",
+              "Adicione a farinha de trigo, alternando com o Leite NINHO, e bata até que tudo esteja incorporado.",
+              "Desligue a batedeira, coloque o fermento em pó e as castanhas e misture bem.",
+              "Em uma forma de furo central (23 cm de diâmetro), untada com manteiga e polvilhada com farinha de trigo, despeje a massa e leve para assar em forno médio (180°C), preaquecido, por cerca de 40 minutos.",
+              "Retire do forno, deixe esfriar, desenforme e sirva com a calda reservada."
+            ],
+            "picture_link": "https://th.bing.com/th/id/R.51b22da97c53b97b7cc83e067a27f043?rik=918cyFVKsos%2bNQ&pid=ImgRaw&r=0"
+          },
+          {
+            "id": 30,
+            "title": "Filé de Pirarucu Empanado na Farinha Uarini Ovinha",
+            "ingredients": [
+              "500 gramas de filé de pirarucu",
+              "4 limões, sal e pimenta a gosto",
+              "Farinha do Uarini"
+            ],
+            "instructions": [
+              "Tempere os filés de pirarucu com os limões, o sal e a pimenta. Reserve por 30 minutos.",
+              "Em um recipiente, coloque um saco de farinha do Uarini (ovinha).",
+              "Esquente bem o óleo.",
+              "Empane o filé de pirarucu na farinha e coloque no óleo bem quente, em média, 3 minutos dourando de cada lado.",
+              "Retire e deixe descansar em um papel toalha.",
+              "Sirva-se e aproveite. Essa porção serve quatro pessoas."
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.4N27Y4sFUzC9O69Sb-_5vgHaE8?rs=1&pid=ImgDetMain"
+          },
+          {
+            "id": 31,
+            "title": "Bolinho de Macaxeira",
+            "ingredients": [
+              "500 gramas de macaxeira cozida",
+              "1 colher e meia de manteiga",
+              "Sal e pimenta a gosto",
+              "Coentro e cebolinha picados",
+              "300 gramas de queijo cortado em cubos",
+              "1 ovo grande",
+              "Farinha de rosca",
+              "Azeite de oliva",
+              "Farinha de trigo"
+            ],
+            "instructions": [
+              "Primeiramente, amasse a macaxeira já cozida até que ela fique completamente homogênea.",
+              "Adicione a manteiga e misture com as mãos. Retire os cabinhos e adicione o sal, pimenta do reino, o coentro e a cebolinha.",
+              "Misture bem. Se a massa estiver muito úmida por causa da manteiga, polvilhe um pouquinho de farinha de trigo.",
+              "Em um recipiente, bata bem o ovo deixando bem homogêneo.",
+              "Passe um pouco de manteiga nas mãos e faça as bolinhas com a massa. Com o polegar, afunde a parte do centro do bolinho, adicione o queijo e feche.",
+              "Em uma forma, espalhe bem o azeite. Passe os bolinhos no ovo e em seguida na farinha de rosca.",
+              "Arrume os bolinhos na forma e leve ao forno por 30 minutos."
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.uzvaLaa_wudm6GfJkh3mBAHaFj?rs=1&pid=ImgDetMain"
+          },
+          {
+            "id": 32,
+            "title": "Bolinho de Piracuí",
+            "ingredients": [
+              "2 colheres (sopa) de óleo",
+              "2 dentes de alho amassados",
+              "Pimentinha verde picada a gosto",
+              "1 maço de coentro e salsinha picado",
+              "1/2 kg de farinha de piracuí (farinha de peixe)",
+              "1 1/2 kg de batatas cozidas e espremidas",
+              "2 ovos",
+              "Sal a gosto",
+              "Óleo para fritar"
+            ],
+            "instructions": [
+              "Numa panela, aqueça o óleo e refogue o alho.",
+              "Acrescente a pimentinha, o coentro, a salsinha e refogue mais um pouco.",
+              "Junte a farinha de piracuí, a batata e acrescente o ovo. Misture bem.",
+              "Acrescente o sal e forme os bolinhos, moldando com as mãos.",
+              "Em uma panela média, aqueça bem o óleo e frite os bolinhos, aos poucos, até dourarem por igual.",
+              "Sirva quente."
+            ],
+            "picture_link": "https://th.bing.com/th/id/OIP.-twp-pqJdw8rVP-YArpRQQHaE8?rs=1&pid=ImgDetMain"
+          }
   ]
   

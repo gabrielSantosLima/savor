@@ -3,4 +3,5 @@ export interface Recipe {
   title: string;
   ingredients: string[];
   instructions: string[];
+  picture_link: string;
 }
