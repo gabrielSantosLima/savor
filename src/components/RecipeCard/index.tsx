@@ -72,7 +72,7 @@ const RecipeCard: React.FC<Props> = ({ recommendation }) => {
         <header className="header">
           <img
             onError={(event) => handleImageError(event, DefaultImg)}
-            src={DefaultImg}
+            src={recipe.picture_link}
             alt="Savor Logo"
             className="logo"
           />
