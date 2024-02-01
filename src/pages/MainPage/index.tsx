@@ -15,25 +15,29 @@ export const MainPage: React.FC = () => {
   // Filters
   const [tags, setTags] = useState<Tag[]>([]);
   const tagIptRef = useRef<HTMLInputElement>(null);
+  const queryIptRef = useRef<HTMLInputElement>(null);
 
   // Found recipes
   const [recipes, setRecipes] = useState<Recipe[] | undefined>();
-  const [recommendations, setRecommendations] = useState<Recommendation[] | undefined>();
-  const [recipes2Show, setRecipes2Show] = useState<Recommendation[] | undefined | Recipe[]>();
+  const [recipes2Show, setRecipes2Show] = useState<
+    Recommendation[] | undefined | Recipe[]
+  >();
 
   useEffect(() => {
-    function fetch() {
-      const newRecipes = recipeService.fetchAll();
-      
+    async function fetch() {
+      const newRecipes = await recipeService.fetchAll();
       setRecipes(newRecipes);
       setRecipes2Show(newRecipes);
-      setRecommendations([]);
     }
 
     fetch();
   }, []);
 
-  function renderRecipe(recipe: Recommendation, index: number) {
+  useEffect(() => {
+    fetchRecommendations(queryIptRef.current?.value || "");
+  }, [tags]);
+
+  function renderRecipe(recipe: Recommendation | Recipe, index: number) {
     return <RecipeCard key={`recipe-${index}`} recommendation={recipe} />;
   }
 
@@ -65,11 +69,15 @@ export const MainPage: React.FC = () => {
     const { key, currentTarget } = event;
     if (key === "Enter") {
       const value = currentTarget["value"];
+      fetchRecommendations(value);
+    }
+  }
 
-      if (recipes) {
-        const result = recipeService.searchRecipes(value, tags);
-        setRecommendations(result);
-      }
+  async function fetchRecommendations(query: string) {
+    if (query === "" && tags.length === 0) return;
+    if (recipes) {
+      const result = await recipeService.searchRecipes(query, tags);
+      setRecipes2Show(result);
     }
   }
 
@@ -85,7 +93,8 @@ export const MainPage: React.FC = () => {
           className="ipt"
           placeholder="Pesquise por receitas..."
           onKeyDown={handleRecommendation}
-          autoFocus
+          onBlur={() => fetchRecommendations(queryIptRef.current?.value || "")}
+          ref={queryIptRef}
         />
         <div className="input-tag">
           <input
@@ -102,7 +111,7 @@ export const MainPage: React.FC = () => {
 
       <main className="main">
         {recipes2Show && recipes2Show.length > 0 ? (
-          <ul className="recipes">{recommendations?.map(renderRecipe)}</ul>
+          <ul className="recipes">{recipes2Show.map(renderRecipe)}</ul>
         ) : recipes2Show === undefined ? (
           <label>Buscando receitas...</label>
         ) : (

@@ -4,22 +4,25 @@ import { MdExpandMore as ArrowIcon } from "react-icons/md";
 import "./styles.css";
 
 import DefaultImg from "../../assets/default.svg";
+import { Recipe } from "../../entities/recipes";
 import { Recommendation } from "../../services/recipes_service";
 
 interface Props {
-  recommendation: Recommendation;
+  recommendation: Recommendation | Recipe;
 }
 
 const RecipeCard: React.FC<Props> = ({ recommendation }) => {
   const [expanded, setExpanded] = useState(false);
+  const recipe =
+    "score" in recommendation ? recommendation.recipe : recommendation;
 
   // Short Form
-  const instructionsShortForm = recommendation.recipe.instructions.join('\n')
-    ? recommendation.recipe.instructions.join(' ').substring(0, 44) + "... "
+  const instructionsShortForm = recipe.instructions.join("\n")
+    ? recipe.instructions.join(" ").substring(0, 44) + "... "
     : "Sem instruções";
-  
-  const titleShortForm = recommendation.recipe.title
-    ? recommendation.recipe.title.substring(0, 44) + "... "
+
+  const titleShortForm = recipe.title
+    ? recipe.title.substring(0, 44) + "... "
     : "Sem nome";
 
   function handleToggleExpand() {
@@ -75,25 +78,30 @@ const RecipeCard: React.FC<Props> = ({ recommendation }) => {
           />
         </header>
         <div className="info">
-          <h2 className="title">{recommendation.recipe.title}</h2>
+          <h2 className="title">{recipe.title}</h2>
           <label className="title">Ingredientes</label>
           <ul className="ingredients">
-            {recommendation.recipe.ingredients ? (
-              recommendation.recipe.ingredients.map(renderIngredient)
+            {recipe.ingredients ? (
+              recipe.ingredients.map(renderIngredient)
             ) : (
               <li>Sem ingredientes</li>
             )}
           </ul>
 
           <label className="title">Passo a Passo</label>
-          <p className="instructions">{recommendation.recipe.instructions}</p>
-          <div className="score">
-            <label className="title">Score de busca</label>
-            <p className="score-number">{recommendation.score.toFixed(2)}</p>
-          </div>
+          <p className="instructions">{recipe.instructions}</p>
+
+          {"score" in recommendation && (
+            <div className="score">
+              <label className="title">Score de busca</label>
+              <p className="score-number">
+                {recommendation.score.toFixed(2)} pontos
+              </p>
+            </div>
+          )}
         </div>
       </div>
-      
+
       {/* <div className="rating">
         <button className="like">
           <LikeIcon size={24} />
